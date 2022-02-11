@@ -1,0 +1,22 @@
+{
+  "singleQuote": true,
+  "semi": true,
+  "tabWidth": 2,
+  "useTabs": false,
+  "trailingComma": "all",
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "printWidth": 120,
+  "overrides": [
+      {
+          "files": ".prettierrc",
+          "options": { "parser": "json" }
+      },
+      {
+          "files": "*.md",
+          "options": {
+              "tabWidth": 2
+          }
+      }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "name": "auto-theme-switch",
+  "displayName": "auto-theme-switch",
+  "description": "Switch themes based at time",
+  "version": "1.0.0",
+  "author": "cnyballk <cnyballk@qq.com> (https://github.com/cnyballk)",
+  "publisher": "cnyballk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cnyballk/auto-theme-switch"
+  },
+  "icon": "public/icon.png",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "switch",
+    "auto"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "auto-theme-switch",
+      "properties": {
+        "switchConfig.darkTheme": {
+          "type": "string",
+          "default": "Visual Studio Dark",
+          "description": "Dark Theme"
+        },
+        "switchConfig.lightTheme": {
+          "type": "string",
+          "default": "Visual Studio Light",
+          "description": "Light theme"
+        },
+        "switchConfig.darkTime": {
+          "type": "string",
+          "default": "18:00",
+          "description": "switch to dark theme at this time"
+        },
+        "switchConfig.lightTime": {
+          "type": "string",
+          "default": "6:00",
+          "description": "switch to light theme at this time"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.50.0",
+    "typescript": "^4.5.5",
+    "vscode-test": "^1.5.0"
+  },
+  "dependencies": {}
+}
