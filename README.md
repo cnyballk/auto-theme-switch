@@ -1,9 +1,34 @@
 # auto-theme-switch
 
-[auto-theme-switch](https://github.com/cnyballk/auto-theme-switch)
+## Features
 
-[issues](https://github.com/cnyballk/auto-theme-switch/issues)
+- The theme can be switched automatically according to the schedule time
 
+## Available Settings
+
+- `switchConfig.darkTheme`: Dark Theme
+
+  ```json
+  "switchConfig.darkTheme": "Visual Studio Dark"
+  ```
+
+- `switchConfig.lightTheme`: Light Theme
+
+  ```json
+  "switchConfig.lightTheme": "Visual Studio Light"
+  ```
+
+- `switchConfig.darkTime`: switch to dark theme at this time
+
+  ```json
+  "switchConfig.darkTheme": "18:00"
+  ```
+
+- `switchConfig.darkTheme`: switch to light theme at this time
+
+  ```json
+  "switchConfig.darkTheme": "6:00"
+  ```
 
 ## CHANGELOG
 
