@@ -21,13 +21,13 @@
 - `switchConfig.darkTime`: switch to dark theme at this time
 
   ```json
-  "switchConfig.darkTheme": "18:00"
+  "switchConfig.darkTime": "18:00"
   ```
 
-- `switchConfig.darkTheme`: switch to light theme at this time
+- `switchConfig.lightTime`: switch to light theme at this time
 
   ```json
-  "switchConfig.darkTheme": "6:00"
+  "switchConfig.lightTime": "6:00"
   ```
 
 ## CHANGELOG
