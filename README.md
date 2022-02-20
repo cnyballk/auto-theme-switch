@@ -1,5 +1,7 @@
 # auto-theme-switch
 
+![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/cnyballk.auto-theme-switch?color=blue&style=flat-square)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/cnyballk/auto-theme-switch?style=flat-square)
 ## Features
 
 - The theme can be switched automatically according to the schedule time

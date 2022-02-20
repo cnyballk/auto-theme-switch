@@ -7,6 +7,8 @@ const THEME_KEY = 'workbench.colorTheme';
 const userConfig = workspace.getConfiguration();
 
 export function switchThemeByTime() {
+  if(!config.open) return;
+
   const hours = getNow();
   const lightTime = getHours(config.lightTime);
   const darkTime = getHours(config.darkTime);

@@ -7,12 +7,14 @@ export interface Config {
   lightTheme: string;
   darkTime: string;
   lightTime: string;
+  open: boolean,
 }
 export const config: Config = {
   darkTheme: "",
   lightTheme: "",
   darkTime: "",
   lightTime: "",
+  open: true,
 };
 
 export function getConfig(e?: ConfigurationChangeEvent) {
@@ -22,6 +24,7 @@ export function getConfig(e?: ConfigurationChangeEvent) {
   config.lightTheme = switchConfig.get("lightTheme", "Visual Studio Light");
   config.darkTime = switchConfig.get("darkTime", "18:00");
   config.lightTime = switchConfig.get("lightTime", "6:00");
+  config.open = switchConfig.get("open", true);
 }
 
 export function configActivate(callback: () => void) {

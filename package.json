@@ -2,7 +2,7 @@
   "name": "auto-theme-switch",
   "displayName": "auto-theme-switch",
   "description": "Switch themes based at time",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "cnyballk <cnyballk@qq.com> (https://github.com/cnyballk)",
   "publisher": "cnyballk",
   "repository": {
@@ -49,6 +49,11 @@
           "type": "string",
           "default": "6:00",
           "description": "switch to light theme at this time"
+        },
+        "switchConfig.open": {
+          "type": "boolean",
+          "default": true,
+          "description": "whether open auto-theme-switch"
         }
       }
     }
