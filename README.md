@@ -30,6 +30,13 @@
 
   ```json
   "switchConfig.lightTime": "6:00"
+
+  ```
+  
+- `switchConfig.open`: whether open auto-theme-switch
+
+  ```json
+  "switchConfig.open":  true
   ```
 
 ## CHANGELOG
